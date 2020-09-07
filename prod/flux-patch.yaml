@@ -21,5 +21,8 @@ spec:
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
+  annotations:
+    fluxcd.io/locked: "true"
+    fluxcd.io/locked_user: mxrss <mxrss@hotmail.com>
   name: speaker
   namespace: metallb-system
