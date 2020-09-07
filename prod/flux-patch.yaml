@@ -5,6 +5,8 @@ metadata:
   annotations:
     flux.weave.works/tag.init: regexp:^3.*
     flux.weave.works/tag.podinfod: semver:~1.4
+    fluxcd.io/locked: "true"
+    fluxcd.io/locked_user: mxrss <mxrss@hotmail.com>
   name: hello-world
   namespace: default
 spec:
