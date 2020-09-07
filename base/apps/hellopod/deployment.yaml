@@ -5,6 +5,9 @@ metadata:
     app: hello-world
   name: hello-world
   namespace: default
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.realtime: semver:~1.0
 spec:
   replicas: 1
   selector:
