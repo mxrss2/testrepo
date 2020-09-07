@@ -8,12 +8,3 @@ spec:
   targetNamespace: monitoring
   set:
     adminPassword: "NotVerySafePassword"
-  valuesContent: |-
-    image:
-      tag: master
-    env:
-      GF_EXPLORE_ENABLED: true
-    adminUser: admin
-    sidecar:
-      datasources:
-        enabled: true
