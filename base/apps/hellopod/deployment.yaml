@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: hello-world
-    mike: true
+    mike: "true"
   name: hello-world
   namespace: default
   annotations:
@@ -23,7 +23,7 @@ spec:
     metadata:
       labels:
         app: hello-world
-        mike: true
+        mike: "true"
     spec:
       containers:
       - image: rancher/hello-world
