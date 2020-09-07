@@ -3,4 +3,6 @@ kind: Kustomization
 bases:
 - ../base/apps/metallb/
 - ../base/apps/hellopod/
+
+resources:
 - ../base/apps/ingress-controller/helm.yaml
