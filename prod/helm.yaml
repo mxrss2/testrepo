@@ -2,9 +2,8 @@ apiVersion: helm.cattle.io/v1
 kind: HelmChart
 metadata:
   name: grafana
-  namespace: kube-system
+  namespace: default
 spec:
   chart: stable/grafana
-  targetNamespace: default
   set:
     adminPassword: "NotVerySafePassword"
