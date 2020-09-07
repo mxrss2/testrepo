@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 # Deploy Metallb First
 - ./apps/metallb/
-- ./apps/hellopod/deployment.yaml
+- ./apps/hellopod/
