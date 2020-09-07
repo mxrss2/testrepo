@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: hello-world
+    mike: true
   name: hello-world
   namespace: default
   annotations:
