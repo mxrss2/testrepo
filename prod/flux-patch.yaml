@@ -17,3 +17,9 @@ spec:
       containers:
       - image: rancher/hello-world:v0.1.2
         name: hello-world
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: speaker
+  namespace: metallb-system
