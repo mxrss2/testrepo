@@ -5,6 +5,6 @@ metadata:
   namespace: kube-system
 spec:
   chart: stable/grafana
-  targetNamespace: monitoring
+  targetNamespace: default
   set:
     adminPassword: "NotVerySafePassword"
