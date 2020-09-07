@@ -3,8 +3,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    flux.weave.works/automated: "true"
     flux.weave.works/tag.init: regexp:^3.*
     flux.weave.works/tag.podinfod: semver:~1.4
   name: hello-world
   namespace: default
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: hello-world
+      containers:
+      - image: rancher/hello-world:v0.1.2
+        name: hello-world
