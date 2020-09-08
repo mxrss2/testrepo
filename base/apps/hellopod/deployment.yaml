@@ -5,7 +5,7 @@ metadata:
     app: hello-world
     mike: "true"
   name: hello-world
-  namespace: default
+  namespace: ingress-nginx
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.realtime: semver:~1.0
@@ -21,6 +21,7 @@ spec:
     type: RollingUpdate
   template:
     metadata:
+      namespace: ingress-nginx
       labels:
         app: hello-world
         mike: "true"
